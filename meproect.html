@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted Living - Калькулятор</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="colorblind.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div id="clock"></div>
+                    <img src="logo.png" alt="Crafted Living Logo" class="logo">
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="etapy_rabot.html">Этапы работ</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="proect.html">Проекты</a></li>
+                    <li><a href="card.html">Карта сайта</a></li>
+                    <li><a href="meproect.html">Свой проект</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="zayavka.html" class="cta-button active">Оставить заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Advertisement Banner -->
+        <section class="calculator">
+            <div class="calculator-container">
+                <h2>Калькулятор стоимости дома</h2>
+                <form id="calculatorForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="area">Площадь дома (м²):</label>
+                            <input type="number" id="area" name="area" placeholder="Укажите площадь">
+                        </div>
+                        <div class="form-group">
+                            <label for="foundation">Тип фундамента:</label>
+                            <select id="foundation" name="foundation">
+                                <option value="slab">Плитный</option>
+                                <option value="strip">Ленточный</option>
+                                <option value="pile">Свайный</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="wallMaterial">Материал стен:</label>
+                            <select id="wallMaterial" name="wallMaterial">
+                                <option value="wood">Дерево</option>
+                                <option value="brick">Кирпич</option>
+                                <option value="block">Блок</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="roofType">Тип кровли:</label>
+                            <select id="roofType" name="roofType">
+                                <option value="metal">Металлочерепица</option>
+                                <option value="tile">Черепица</option>
+                                <option value="slate">Сланец</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="finishClass">Класс отделки:</label>
+                            <select id="finishClass" name="finishClass">
+                                <option value="economy">Эконом</option>
+                                <option value="comfort">Комфорт</option>
+                                <option value="premium">Премиум</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="region">Регион строительства:</label>
+                            <input type="text" id="region" name="region" placeholder="Укажите регион">
+                        </div>
+                    </div>
+
+                     <button type="button" class="calculate-button" onclick="calculateCost()">Рассчитать стоимость</button>
+                     <div id="costResult" class="cost-result"></div> <!-- Result Display Area -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="company">
+                <h3>Компания:</h3>
+               <ul>
+                    <li><a href="company.html">О компании</a></li>
+                    <li><a href="politic.html">Политика конфиденциальности</a></li>
+                    <li><a href="personaldan.html">Персональные данные</a></li>
+                    <li><a href="pravila.html">Правила пользования сайта</a></li>
+                </ul>
+            </div>
+
+            <div class="crafted-living">
+                <h3>Crafted Living</h3>
+                <ul>
+                    <li><a href="sposoboplat.html">Способы оплаты</a></li>
+                    <li><a href="credit.html">Кредиты</a></li>
+                    <li><a href="garantia.html">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="stay-connected">
+                <h3>Оставайтесь на связи</h3>
+                <p>+7-901-052-69-89 (9:00-22:00)</p>
+                <p>Адрес: г. Москва, метро "Охотный ряд",</p>
+                <p>Тверская улица, 20/1с1</p>
+                <div class="social-icons">
+                    <a href="https://vk.com/club230679274?from=groups"><img src="вк.png" alt="VK"></a>
+                    <a href="https://t.me/crafted_living"><img src="тг.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Crafted Living. Все права защищены
+        </div>
+    </footer>
+
+    <button id="back-to-top-button" class="back-to-top" title="Наверх">▲</button>
+    <script src="script6.js"></script>
+    <script src="theme-switcher.js"></script>
+
+</body>
+</html>

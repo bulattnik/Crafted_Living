@@ -1,0 +1,363 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles (Same as the other pages) */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-left: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: #000000;
+}
+
+.cta-button {
+    background-color: #ff8d13;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff992c;
+}
+
+/* Search and Cart Styles */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 5px;
+    transition: border-color 0.3s;
+}
+
+#search:focus {
+    border-color: #ff8504;
+    outline: none;
+}
+
+.search-icon,
+.cart-button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-icon {
+    background-color: #ddd;
+}
+
+.search-icon:hover {
+    background-color: #ccc;
+}
+
+.cart-button {
+    background-color: #ff8504;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
+.cart-button:hover {
+    background-color: #ff8504;
+}
+
+/* Main Styles */
+.main {
+    background-color: #f3dfc4;
+    padding-bottom: 20px;
+}
+
+/* Projects Section Styles */
+.projects {
+    padding: 40px 20px;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.projects-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;  /* Project card animations */
+     border: 1px solid #ddd; /* Add a subtle border */
+}
+.project-card:hover {
+   transform: translateY(-5px);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 8px;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-card .price {
+    font-size: 1.2rem;
+    color: #ff8504;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    background-color: #ff8504;
+    color: #fff;
+    display: block;
+    padding: 12px 0;
+    border-radius: 0 0 15px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Button Hover */
+}
+.project-card a:hover {
+   background-color: #ff8504;
+}
+
+/* Footer Styles (Same as the other pages) */
+.footer {
+    background-color: #f3dfc4;
+    padding: 30px 0;
+    color: #965b12;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.company,
+.crafted-living,
+.stay-connected {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.company h3,
+.crafted-living h3,
+.stay-connected h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company ul,
+.crafted-living ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company li,
+.crafted-living li {
+    margin-bottom: 8px;
+}
+
+.company a,
+.crafted-living a {
+    text-decoration: none;
+    color: #965b12;
+    transition: color 0.3s;
+}
+
+.company a:hover,
+.crafted-living a:hover {
+    color: #ff9800;
+}
+
+.stay-connected p {
+    margin-bottom: 8px;
+}
+
+.stay-connected .social-icons {
+    display: flex;
+    justify-content: left;
+}
+
+.stay-connected .social-icons a {
+    margin-right: 10px;
+}
+
+.stay-connected .social-icons img {
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f3dfc4;
+    color: #965b12;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e09a51;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #cc853a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+     .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+    }
+    .projects-description {
+        text-align: center;
+
+    }
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 100%;
+         max-width: 400px;
+
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company,
+    .crafted-living,
+    .stay-connected {
+        width: 100%;
+    }
+
+    .stay-connected .social-icons {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,110 @@
+/* Colorblind-friendly color scheme */
+:root[data-theme="colorblind"] {
+    --primary-color: #0077BB;      /* Blue - easily distinguishable */
+    --secondary-color: #EE7733;    /* Orange - high contrast */
+    --background-color: #FFFFFF;    /* White background */
+    --text-color: #000000;         /* Black text */
+    --link-color: #0077BB;         /* Blue links */
+    --header-bg: #FFFFFF;
+    --footer-bg: #DDDDDD;          /* Light grey */
+    --button-bg: #0077BB;          /* Blue buttons */
+    --button-text: #FFFFFF;        /* White text on buttons */
+    --card-bg: #FFFFFF;
+    --card-shadow: rgba(0, 0, 0, 0.2);
+    --price-color: #EE7733;        /* Orange price */
+    --hover-color: #009988;        /* Teal for hover states */
+}
+
+/* Header styles */
+[data-theme="colorblind"] .header {
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+[data-theme="colorblind"] .navigation a {
+    color: var(--text-color);
+}
+
+[data-theme="colorblind"] .navigation a:hover,
+[data-theme="colorblind"] .navigation a.active {
+    background-color: var(--hover-color);
+    color: var(--button-text);
+}
+
+[data-theme="colorblind"] .cta-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+[data-theme="colorblind"] .cta-button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Main content */
+[data-theme="colorblind"] .main {
+    background-color: var(--background-color);
+}
+
+[data-theme="colorblind"] .advertisement-banner {
+    background-color: var(--secondary-color);
+    color: var(--button-text);
+}
+
+[data-theme="colorblind"] .portfolio-item {
+    background-color: var(--card-bg);
+    box-shadow: 0 3px 10px var(--card-shadow);
+}
+
+[data-theme="colorblind"] .house-info .price {
+    color: var(--secondary-color);
+}
+
+/* Footer styles */
+[data-theme="colorblind"] .footer {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+}
+
+[data-theme="colorblind"] .footer a {
+    color: var(--link-color);
+}
+
+[data-theme="colorblind"] .footer a:hover {
+    color: var(--hover-color);
+}
+
+/* Theme switcher button */
+.theme-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 0.9;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.theme-switcher:hover {
+    background-color: var(--hover-color);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.theme-icon {
+    font-size: 14px;
+}
+
+/* High contrast focus states */
+[data-theme="colorblind"] *:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+} 

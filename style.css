@@ -1,0 +1,473 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling for in-page links and back-to-top */
+}
+
+.container { /* Not used, but keeping as it's often helpful */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 121, 55, 0.5);
+}
+
+.cta-button {
+    background-color: #cc853a; /* Light Brown/Orange  */
+    color: #fff;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #cc853a;
+}
+
+/* Search and Cart */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.search-icon, .cart-button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-icon {
+    background-color: #ddd; /* Gray */
+}
+.cart-button {
+    background-color: #cc853a; /* Orange */
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+.cart-button:hover{
+    background-color: #cc853a;
+}
+
+/* Main Styles */
+.main {
+    background-color: #f9f9f9; /* Match BG */
+    padding-bottom: 20px; /* Space for copyright */
+}
+
+/* Advertisement Banner */
+.advertisement-banner {
+    background-color: #ff8222; /* Bright Orange for emphasis */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.cta-banner-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.cta-banner-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ff5722;
+}
+
+
+/* Hero Section Styles */
+.hero {
+    margin-top: 20px; /* Space after header */
+    padding: 0 20px; /* Add side padding */
+    position: relative; /* For the hero text to be absolute */
+}
+
+.hero-image-container {
+    border-radius: 25px;
+    overflow: hidden; /* Clip  */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow */
+    z-index: 2;
+    width: 100%;
+    max-width: 800px; /* Limit width */
+}
+
+
+/* Stats Section Styles */
+.stats {
+    padding: 30px 20px;
+    background-color: #fff; /* White background */
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap on smaller */
+}
+
+.stat-item {
+    background-color: #ff8e14; /* Light Brown/Orange */
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 20px; /* Vertical spacing */
+    width: 200px; /* Equal width */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s; /* Add a transition for the hover effect */
+}
+
+.stat-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* News Section */
+.news {
+    padding: 40px 20px;
+}
+.news h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.news-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between news items */
+}
+
+.news-item {
+    width: 300px; /* Adjust */
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Add a transition for the hover effect */
+}
+.news-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+.news-item img {
+    width: 100%;
+    height: 200px; /* Fixed Height for images */
+    object-fit: cover; /* Cover */
+    display: block;
+}
+
+.news-item h3 {
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.news-item p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    color: #cc853a;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    background-color: #ff8f18;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+}
+.read-more:hover{
+    background-color: #e09b519f;;
+}
+
+/* Feedback Section */
+.feedback {
+    background-color: #f3dfc4;
+    padding: 40px 20px;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text */
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feedback-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e09b519f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10; /* Above everything */
+    display: none; /* Hidden initially */
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #e09b519a;
+}
+
+/* Footer Styles (Same as the other pages) */
+
+.footer {
+    background-color: #f3dfc4;
+    padding: 30px 0;
+    color: #965b12;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.company,
+.crafted-living,
+.stay-connected {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.company h3,
+.crafted-living h3,
+.stay-connected h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company ul,
+.crafted-living ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company li,
+.crafted-living li {
+    margin-bottom: 8px;
+}
+
+.company a,
+.crafted-living a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.company a:hover,
+.crafted-living a:hover {
+    color: #e09b519e;
+}
+
+.stay-connected p {
+    margin-bottom: 8px;
+}
+.stay-connected .social-icons {
+    display: flex;
+    justify-content: left;
+}
+
+.stay-connected .social-icons a {
+    margin-right: 10px;
+}
+.stay-connected .social-icons img {
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f3dfc4;
+    color: #965b12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company,
+    .crafted-living,
+    .stay-connected {
+        width: 100%;
+    }
+
+    .stay-connected .social-icons {
+        justify-content: center;
+    }
+
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item {
+        width: 100%;
+    }
+}
+

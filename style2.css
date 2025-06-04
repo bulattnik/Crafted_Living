@@ -1,0 +1,366 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff; /* Match Background*/
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-left: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 152, 0, 0.2);
+     color: #965b12;
+}
+
+.cta-button {
+    background-color: #ff721aca;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #cc853a;
+}
+
+/* Search and Cart Styles */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.search-icon,
+.cart-button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-icon {
+    background-color: #ddd;
+}
+
+.cart-button {
+    background-color: #ff721aca;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
+.cart-button:hover {
+    background-color: #ff721aca;
+}
+
+/* Main Styles */
+.main {
+    background-color: #f3dfc4; /* Match background */
+    padding-bottom: 20px;
+}
+
+/* Process Section Styles */
+.process {
+    padding: 50px 20px;
+    background-color: #f3dfc4; /* Light orange background */
+    color: #965b12;
+
+}
+
+.process-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.process h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.process-description {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #965b12; /* Color */
+    margin-bottom: 40px;
+}
+
+.process-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Vertical line */
+.process-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px; /* Adjust position */
+    width: 2px;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 20px,
+        rgba(200, 200, 200, 0.5) 20px,
+        rgba(200, 200, 200, 0.5) 40px
+    );
+}
+
+.process-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e09a51; /* Light Brown/Orange */
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    position: relative;
+    z-index: 1;
+     color: #965b12;
+}
+
+.process-content h3 {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.process-content p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+/* Footer Styles (Same as the other pages) */
+.footer {
+    background-color: #f3dfc4;
+    padding: 30px 0;
+    color: #965b12; /* Color */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.company,
+.crafted-living,
+.stay-connected {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.company h3,
+.crafted-living h3,
+.stay-connected h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company ul,
+.crafted-living ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company li,
+.crafted-living li {
+    margin-bottom: 8px;
+}
+
+.company a,
+.crafted-living a {
+    text-decoration: none;
+    color: #965b12;
+    transition: color 0.3s;
+}
+
+.company a:hover,
+.crafted-living a:hover {
+    color: #ff9800;
+}
+
+.stay-connected p {
+    margin-bottom: 8px;
+}
+
+.stay-connected .social-icons {
+    display: flex;
+    justify-content: left;
+}
+
+.stay-connected .social-icons a {
+    margin-right: 10px;
+}
+
+.stay-connected .social-icons img {
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f3dfc4;
+    color: #965b12;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e09a51;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #cc853a;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+     .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .process h1 {
+         font-size: 2.5rem;
+
+    }
+    .process-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .process-number {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .process-item::before {
+        display: none; /* Hide line on */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company,
+    .crafted-living,
+    .stay-connected {
+        width: 100%;
+    }
+
+    .stay-connected .social-icons {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,384 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease; /* Header transition */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-left: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s; /* Navigation transitions */
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: #965b12;
+}
+
+.cta-button {
+    background-color: #ff721aca;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Button transition */
+}
+
+.cta-button:hover {
+    background-color: #cc853a;
+}
+
+/* Search and Cart Styles */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 5px;
+    transition: border-color 0.3s; /* Search field transition */
+}
+
+#search:focus {
+border-color:  #ff9800;
+    outline: none;
+}
+
+.search-icon,
+.cart-button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Icon transitions */
+}
+
+.search-icon {
+    background-color: #ddd;
+}
+
+.search-icon:hover {
+    background-color: #ccc;
+}
+
+.cart-button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
+.cart-button:hover {
+    background-color:  #ff9800;
+}
+
+/* Main Styles */
+.main {
+    background-color: #f3dfc4;
+    padding-bottom: 20px;
+    overflow: hidden;  /* Prevent overflow due to animations */
+}
+
+/* Services Section Styles */
+.services {
+    padding: 40px 20px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.8s forwards 0.3s;  /* Fade-in animation */
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.3s, opacity 0.3s;  /* Card transitions */
+    animation: fadeInUp 0.8s forwards 0.5s;  /* Fade-in animation */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #e09a51;
+    font-weight: bold;
+}
+
+.service-card a {
+    display: block;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 0 0 20px 20px;
+    transition: background-color 0.3s;  /* Button transitions */
+}
+
+.service-card a:hover {
+    background-color: #cc853a;
+}
+
+/* Footer Styles (Same as the other pages) */
+.footer {
+    background-color: #f3dfc4;
+    padding: 30px 0;
+    color: #965b12;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.company,
+.crafted-living,
+.stay-connected {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.company h3,
+.crafted-living h3,
+.stay-connected h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company ul,
+.crafted-living ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company li,
+.crafted-living li {
+    margin-bottom: 8px;
+}
+
+.company a,
+.crafted-living a {
+    text-decoration: none;
+    color: #965b12;
+    transition: color 0.3s;
+}
+
+.company a:hover,
+.crafted-living a:hover {
+    color: #ff9800;
+}
+
+.stay-connected p {
+    margin-bottom: 8px;
+}
+
+.stay-connected .social-icons {
+    display: flex;
+    justify-content: left;
+}
+
+.stay-connected .social-icons a {
+    margin-right: 10px;
+}
+
+.stay-connected .social-icons img {
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f3dfc4;
+    color: #965b12;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e09a51;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #cc853a;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company,
+    .crafted-living,
+    .stay-connected {
+        width: 100%;
+    }
+
+    .stay-connected .social-icons {
+        justify-content: center;
+    }
+
+}
